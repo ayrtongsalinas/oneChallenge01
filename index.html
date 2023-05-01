@@ -27,7 +27,7 @@
       <!-- Mitad izquierda del sitio web -->
       <div class="contenedor-izquierda">
         <textarea
-          class="input"
+          id="input"
           placeholder="Ingrese aquí su texto a encriptar o desencriptar."
           autofocus
         ></textarea>
@@ -46,11 +46,21 @@
       </div>
       <!-- Mitad derecha del sitio web -->
       <div class="contenedor-derecha">
-        <img src="assets/img/searchDummy.svg" alt="Image" class="searchDummy" />
-        <h3 class="h3">Ningún mensaje fue encontrado.</h3>
-        <h4 class="h4">Ingrese el texto que desea encriptar o desencriptar.</h4>
+        <div id="output"></div>
+        <div id="objetosOutput">
+          <img
+            src="assets/img/searchDummy.svg"
+            alt="Image"
+            class="searchDummy"
+          />
+          <h3 class="h3">
+            Ningún mensaje fue encontrado. <br />
+            Ingrese el texto que desea encriptar o desencriptar.
+          </h3>
+        </div>
         <input type="button" value="Copiar" id="copiar" />
       </div>
     </main>
   </body>
+  <script defer src="assets/js/script.js"></script>
 </html>
