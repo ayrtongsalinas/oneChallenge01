@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- TITULO & ICONO -->
-    <title>Document</title>
-    <link rel="shortcut icon" href="" />
+    <title>Challenge 1</title>
+    <link rel="shortcut icon" href="assets/img/logoWhite.svg" />
     <!-- ESTILOS CSS -->
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -21,7 +21,36 @@
   </head>
   <body>
     <header>
-      <img src="assets/img/logo.svg" alt="alura logo" class="logo" />
+      <img src="assets/img/logoBlue.svg" alt="alura logo" class="logo" />
     </header>
+    <main>
+      <!-- Mitad izquierda del sitio web -->
+      <div class="contenedor-izquierda">
+        <textarea
+          class="input"
+          placeholder="Ingrese aquí su texto a encriptar o desencriptar."
+          autofocus
+        ></textarea>
+        <p class="texto">
+          <img
+            src="assets/img/exclamation.png"
+            alt="Exclamacion"
+            class="exclamacion"
+          />
+          Solo letras minúsculas y sin acentos.
+        </p>
+        <div class="contenedor-botones">
+          <input type="button" value="Encriptar" id="encriptar" />
+          <input type="button" value="Desencriptar" id="desencriptar" />
+        </div>
+      </div>
+      <!-- Mitad derecha del sitio web -->
+      <div class="contenedor-derecha">
+        <img src="assets/img/searchDummy.svg" alt="Image" class="searchDummy" />
+        <h3 class="h3">Ningún mensaje fue encontrado.</h3>
+        <h4 class="h4">Ingrese el texto que desea encriptar o desencriptar.</h4>
+        <input type="button" value="Copiar" id="copiar" />
+      </div>
+    </main>
   </body>
 </html>
