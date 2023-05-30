@@ -9,8 +9,8 @@
     <title>Challenge 1</title>
     <link rel="shortcut icon" href="assets/img/logoWhite.svg" />
     <!-- ESTILOS CSS -->
-    <link rel="stylesheet" href="oneChallenge1/assets/css/reset.css" />
-    <link rel="stylesheet" href="oneChallenge1/assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,7 +33,7 @@
         ></textarea>
         <p class="texto">
           <i class="exclamacion">&excl;</i>
-          Solo letras minúsculas y sin acentos.
+          &nbsp;&nbsp;Solo letras minúsculas y sin acentos.
         </p>
         <div class="contenedor-botones">
           <input type="button" class="boton" value="Encriptar" id="encriptar" />
@@ -42,17 +42,7 @@
       </div>
       <!-- Mitad derecha del sitio web -->
       <div class="contenedor-derecha">
-        <div id="output"></div>
-        <div id="objetosOutput">
-          <img
-            src="assets/img/searchDummy.svg"
-            alt="Image"
-            class="searchDummy"/>
-          <h3 class="h3">
-            Ningún mensaje fue encontrado. <br />
-            Ingrese el texto que desea encriptar o desencriptar.
-          </h3>
-        </div>
+          <textarea id="output" placeholder="Ningún mensaje fue encriptado." readonly></textarea>
         <input type="button" class="boton" value="Copiar" id="copiar" />
       </div>
     </main>
