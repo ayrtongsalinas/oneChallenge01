@@ -29,19 +29,15 @@
         <textarea
           id="input"
           placeholder="Ingrese aquí su texto a encriptar o desencriptar."
-          autofocus
+           autofocus
         ></textarea>
         <p class="texto">
-          <img
-            src="assets/img/exclamation.png"
-            alt="Exclamacion"
-            class="exclamacion"
-          />
+          <i class="exclamacion">&excl;</i>
           Solo letras minúsculas y sin acentos.
         </p>
         <div class="contenedor-botones">
-          <input type="button" value="Encriptar" id="encriptar" />
-          <input type="button" value="Desencriptar" id="desencriptar" />
+          <input type="button" class="boton" value="Encriptar" id="encriptar" />
+          <input type="button" class="boton" value="Desencriptar" id="desencriptar" />
         </div>
       </div>
       <!-- Mitad derecha del sitio web -->
@@ -51,14 +47,13 @@
           <img
             src="assets/img/searchDummy.svg"
             alt="Image"
-            class="searchDummy"
-          />
+            class="searchDummy"/>
           <h3 class="h3">
             Ningún mensaje fue encontrado. <br />
             Ingrese el texto que desea encriptar o desencriptar.
           </h3>
         </div>
-        <input type="button" value="Copiar" id="copiar" />
+        <input type="button" class="boton" value="Copiar" id="copiar" />
       </div>
     </main>
   </body>

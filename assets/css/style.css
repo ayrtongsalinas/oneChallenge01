@@ -1,7 +1,164 @@
 :root {
+  --color-primary: #eaff6a;
+  --color-white: #ffffff;
+  --color-darkgray: #1f2023;
 }
 
 * {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--color-darkgray);
+}
+
+.logo {
+  height: 3rem;
+  width: auto;
+  margin: 2rem 1rem;
+  filter: saturate(0) brightness(5);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contenedor-izquierda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 40%;
+  padding: 2rem;
+}
+
+#input {
+  resize: none;
+  min-height: 50vh;
+  min-width: 90%;
+  margin-bottom: 4rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 3px solid var(--color-darkgray);
+  outline: 0;
+  transition: all 300ms ease-in-out;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+#input::-webkit-scrollbar {
+  width: .75rem;
+}
+
+#input::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 1rem;
+}
+
+#input::-webkit-scrollbar-track {
+  background: none;
+}
+
+#input:hover {
+  border: 3px solid rgba(234, 255, 106, 0.3);
+  color: rgba(234, 255, 106, 0.5)
+}
+
+#input:focus {
+  border: 3px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.texto {
+  color: white;
+}
+
+.contenedor-botones {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.exclamacion {
+  color: white;
+  background-color: black;
+  padding: 0 .55rem;
+  border-radius: 50%;
+}
+
+.contenedor-derecha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 40%;
+  padding: 2rem;
+}
+
+.searchDummy {
+  display: none;
+}
+
+.h3 {
+  min-height: 30rem;
+  border-radius: 1rem;
+  border: 3px solid rgba(234, 255, 106, 0.3);
+  padding: 1rem;
+  min-height: 50vh;
+  transition: all 300ms ease-in-out;
+  color: rgba(234, 255, 106, 0.3);
+}
+
+.h3:hover {
+  border: 3px solid rgba(234, 255, 106, 0.5);
+  color: rgba(234, 255, 106, 0.5);
+}
+
+.h3:active {
+  border: 3px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+#copiar  {
+  margin-top: 3rem;
+}
+
+.boton {
+  padding: .5rem 3rem;
+  border-radius: 1rem;
+  background: none;
+  border: 3px solid rgba(234, 255, 106, 0.3);
+  color: rgba(234, 255, 106, 0.3);
+  margin: 1rem 1rem 0 1rem;
+  transition: all 300ms ease-in-out;
+  font-weight: 700;
+}
+
+.boton:hover {
+  border: 3px solid rgba(234, 255, 106, 0.5);
+  color: rgba(234, 255, 106, 0.5);
+}
+
+.boton:active {
+  border: 3px solid var(--color-primary);
+  color: var(--color-darkgray);
+  background-color: var(--color-primary);
+}
+
+@media screen and (max-width: 1366px) {
+  main {
+    flex-direction: column;
+  }
+
+  .contenedor-botones {
+    flex-direction: column;
+  }
 }
